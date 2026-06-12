@@ -104,7 +104,7 @@ See [README.md — Environment variables](README.md#environment-variables) for t
 
 | File | What it controls | Change when… |
 |------|------------------|--------------|
-| `src/lib/shotPacks.ts` | Shot tabs, labels, and `presetPrompt` text sent to Gemini | You update the [Cinematic Shot Types](https://docs.google.com/spreadsheets/d/1MFsHt3Eg6awUQG0qLHYObWtOcj95E3uMclVZHLmJKdc/edit) matrix and want the app to match. |
+| `src/lib/shotPacks.ts` | Shot tabs, labels, and `presetPrompt` text sent to Gemini | You want to add, remove, or rename shots in the matrix. |
 | `src/lib/generatedFrameSize.ts` | Batch output width/aspect (default 500px wide, 16:9) | You want faster/cheaper previews or a different aspect ratio before external upscale. |
 | `src/App.tsx` → `SOLO_UPSCALE_PRESETS` | Width buttons on Solo Upscale | Your usual export widths aren’t in the built-in list. |
 | `src/App.tsx` → `DEFAULT_PROJECT` | Initial **filename prefix** in the UI | You want a different default than `ShotSmith`. |

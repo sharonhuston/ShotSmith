@@ -57,16 +57,16 @@ Use this format for new entries:
 
 ---
 
-### 004 — Shot list: Cinematic Shot Types matrix
+### 004 — Shot list in `shotPacks.ts`
 
 **Status:** Accepted  
 **Date:** 2026-04-22  
 
-**Context:** Shots and prompt suffixes live in a shared spreadsheet.  
+**Context:** The app needs a fixed catalog of cinematic shot types, each with a human label and a short prompt suffix for batch generation.  
 
-**Decision:** Encode categories and rows in `src/lib/shotPacks.ts`; `presetPrompt` matches the sheet’s **Prompt Suffix** column.  
+**Decision:** Encode categories and rows in `src/lib/shotPacks.ts`; `presetPrompt` is the model-facing suffix merged with the style anchor.  
 
-**Consequences:** Sheet changes require a code update or a future import path (CSV, etc.).  
+**Consequences:** Shot changes require editing `shotPacks.ts` or a future import path (CSV, etc.).  
 
 ---
 

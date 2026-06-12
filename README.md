@@ -158,7 +158,7 @@ Full steps: [USER_GUIDE.md — Windows: create the launcher shortcut](USER_GUIDE
 
 1. **Reference image** — Drop or pick a **PNG** or **JPEG**. The app calls Gemini with a high-quality read of the file (see `src/lib/prepareImageForGemini.ts`; very large files may be resampled to fit API limits).  
 2. **Style anchor** — Read-only text field fills when **vibe parse** succeeds. This is the global style string; you don’t type it.  
-3. **Shot matrix** — Five category tabs; check any shots you want. Data and **prompt suffixes** follow your [Cinematic Shot Types](https://docs.google.com/spreadsheets/d/1MFsHt3Eg6awUQG0qLHYObWtOcj95E3uMclVZHLmJKdc/edit) matrix (`src/lib/shotPacks.ts`).  
+3. **Shot matrix** — Five category tabs; check any shots you want. Shot types and prompt suffixes are defined in `src/lib/shotPacks.ts`.
 4. **Batch controls** — Project name (for filenames), **creativity** (denoising 0–1), **Identity lock** (one shared **batch seed** for every shot in that run when on), and **output folder** (directory picker, Chromium).  
 5. **Batch generate** — Calls the **Pro image** model for each selected shot, writes files into the output folder, and logs progress. See `src/lib/geminiImageGeneration.ts`.
 

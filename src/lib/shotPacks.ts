@@ -1,16 +1,14 @@
 /**
- * Cinematic shot matrix: categories, shot types, and prompt suffixes from
- * "Cinematic Shot Types Matrix" (Google Sheets, user-provided).
- * https://docs.google.com/spreadsheets/d/1MFsHt3Eg6awUQG0qLHYObWtOcj95E3uMclVZHLmJKdc/edit?usp=sharing
+ * Cinematic shot matrix: categories, shot types, descriptions, and prompt suffixes.
  *
- * `presetPrompt` is the sheet’s "Prompt Suffix" column, merged with the internal style anchor at batch time.
+ * `presetPrompt` is merged with the internal style anchor at batch time.
  */
 export type ShotDef = {
   id: string
   label: string
-  /** From the sheet’s Description column; shown in the UI, not the model unless you add it. */
+  /** Shown in the UI; not sent to the model unless you add it to the prompt. */
   description: string
-  /** Sheet "Prompt Suffix" — model-facing fragment with the style anchor. */
+  /** Model-facing fragment merged with the style anchor. */
   presetPrompt: string
 }
 

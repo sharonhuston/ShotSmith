@@ -10,7 +10,7 @@ Living backlog for **ShotSmith**: what’s true today, what to build next, and n
 - [x] **Reference** — Upload PNG/JPEG, preview, file metadata.  
 - [x] **Vibe parse** — `parseVibeFromImage`: default `gemini-3.1-pro-preview` (`VITE_GEMINI_MODEL`). High-res path in `prepareImageForGemini.ts`.  
 - [x] **Batch image generation** — `geminiImageGeneration.ts` + `savePngToDirectory.ts`: default **Pro image** `gemini-3-pro-image-preview` (`VITE_GEMINI_IMAGE_MODEL`), reference + prompt per job, files to chosen folder.  
-- [x] **Shot matrix** — Five tabs (Cinematic, Detail, Context, Pedagogy, Technical), rows aligned to the **Cinematic Shot Types** spreadsheet; `presetPrompt` = sheet **Prompt Suffix** (`shotPacks.ts`).  
+- [x] **Shot matrix** — Five tabs (Cinematic, Detail, Context, Pedagogy, Technical); rows and `presetPrompt` suffixes in `shotPacks.ts`.  
 - [x] **Identity lock** — Toggle; when on, one `batchSeed` per **Batch generate** click, same value on every `BatchJob` (`buildBatchJobs.ts`, `identityLock.ts`).  
 - [x] **Batch controls** — Project name, denoising slider, folder picker (File System Access), **Batch generate** log (jobs, names, seed, **planned 500×16:9** line).  
 - [x] **Naming helper** — `buildOutputFilename` in `naming.ts`.  
@@ -56,7 +56,7 @@ Living backlog for **ShotSmith**: what’s true today, what to build next, and n
 
 - **Electron** (or Tauri) — key not in the browser bundle; native file dialogs; easier automation.  
 - **AHK** (Windows) — hotkeys and orchestration *outside* this repo; document in README when relevant.  
-- **CSV import** for `shotPacks` so the spreadsheet can drive content without a code edit.  
+- **CSV import** for `shotPacks` so the shot list can be edited without a code change.  
 
 ---
 
