@@ -155,7 +155,7 @@ Your keys go in **`_local/.env`**—not in the project root, not in GitHub.
 ### Step-by-step
 
 1. In the project folder, open the **`_local`** subfolder.
-2. Find **` .env.example`** (a template with `#` comment lines).
+2. Find **`.env.example`** (a template with `#` comment lines).
 3. **Copy** that file and **paste** in the same folder.
 4. **Rename** the copy to **`.env`** (exactly—starts with a dot, no `.example`).
 5. Open **`.env`** in a plain text editor:
