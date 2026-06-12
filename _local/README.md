@@ -18,4 +18,4 @@ Put **machine-specific** files here. The whole folder is gitignored except this 
 
 **Do not commit** `.env`, `.lnk`, or other private files from this folder. Git only tracks `README.md` and `.env.example` in `_local/`.
 
-See [USER_GUIDE.md](../USER_GUIDE.md#the-_local-folder) and [README.md](../README.md#what-goes-on-github).
+See [USER_GUIDE.md](../USER_GUIDE.md#the-_local-folder) and [README.md](../README.md#your-private-files).
