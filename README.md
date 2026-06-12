@@ -8,6 +8,8 @@ ShotSmith is a **local app** for instructional designers, filmmakers, and anyone
 
 The workflow is a simple wizard: **Select Image** → **Select Shots** → **Gallery**. Two additional tabs offer photo cleanup and solo upscaling for individual files.
 
+**Getting started:** New to Node.js or the command line? Use the [**Setup guide (step by step)**](SETUP_GUIDE.md)—a detailed walkthrough for installing ShotSmith, adding your API keys, and running the app for the first time (with screenshots).
+
 | | |
 |--|--|
 | **Seed-driven** | One reference image anchors style across every shot. |
