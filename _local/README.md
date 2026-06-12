@@ -8,6 +8,7 @@ Put **machine-specific** files here. The whole folder is gitignored except this 
 | **`Launch ShotSmith.lnk`** | Windows shortcut with the custom icon (created by `Launch ShotSmith.bat` or `Create Launcher Shortcut.bat`). |
 | **`notes.txt`** | Optional personal scratch notes. |
 | **`ShotSmith_original_art.png`** | Optional source art / exports you do not want in the repo. |
+| **`LinkedIn Article/`** | Article draft and **source UI screenshots** for docs (PNG copies live in `docs/images/` in the repo). |
 
 **Setup (every new clone):**
 

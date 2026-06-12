@@ -4,6 +4,8 @@ This guide is for **first-time setup** if you are new to Node.js, the command li
 
 **Already comfortable with those tools?** Use the shorter [Quick start in USER_GUIDE.md](USER_GUIDE.md#quick-start) instead.
 
+**Screenshots:** The [workflow walkthrough](#part-7-confirm-setup-works) below includes UI examples from the docs ([`docs/images/`](docs/images/)). Some show an earlier development title; current builds display **ShotSmith**.
+
 ---
 
 ## What you are installing
@@ -227,6 +229,24 @@ Quick smoke test:
 3. Choose an output folder, pick a shot on **Select Shots**, run **Generate** if you want a full test.
 
 If the style anchor appears, setup is complete. Day-to-day use: [USER_GUIDE.md — Using the app](USER_GUIDE.md#using-the-app).
+
+### What the app looks like (example project)
+
+These screenshots use a sample “Construction” project. Your reference image and filenames will differ.
+
+**Select Image** — upload, output folder, and filename prefix:
+
+![Select Image step: reference preview, output folder, and filename prefix](docs/images/setup-select-image.png)
+
+**Select Shots** — pick shot types and counts, then **Generate**:
+
+![Select Shots step: shot matrix and Generate button](docs/images/setup-select-shots.png)
+
+**Gallery** — batch progress and thumbnails; select favorites to upscale:
+
+![Gallery: batch progress, thumbnails, and Upscale to 4K](docs/images/setup-gallery-batch.png)
+
+If setup works, you should reach **Select Image** and see a style anchor after upload. The gallery appears after you run **Generate**.
 
 ---
 

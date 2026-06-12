@@ -60,6 +60,22 @@ Living backlog for **ShotSmith**: what’s true today, what to build next, and n
 
 ---
 
+## Documentation screenshots
+
+Tracked images for [SETUP_GUIDE.md](SETUP_GUIDE.md) and [USER_GUIDE.md](USER_GUIDE.md). Sources and filenames: [`docs/images/README.md`](docs/images/README.md).
+
+| Task | Status | Notes |
+|------|--------|--------|
+| **Workflow UI** (Select Image, Shots, Gallery, Upscale Only) | [x] | Copied from `_local/LinkedIn Article/` → `docs/images/` |
+| **Re-capture with ShotSmith title bar** | [ ] | LinkedIn shots may show early dev window title |
+| **Node.js install** | [ ] | Installer screen + `node --version` check |
+| **`_local/.env` setup** | [ ] | Notepad with key redacted |
+| **Launch / terminal** | [ ] | `Launch ShotSmith.bat` and localhost URL in browser |
+| **Cleanup Only tab** | [ ] | No screenshot in LinkedIn folder yet |
+| **Google AI Studio / fal.ai** | [ ] | Optional; UI changes often |
+
+---
+
 ## “Ideas / parking lot”
 
 - Per-shot strength overrides.  

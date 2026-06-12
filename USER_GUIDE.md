@@ -37,6 +37,7 @@ GitHub gets the app source and docs—not your keys, shortcuts, or scratch files
 | **`_local/.env`** | No | Your API keys |
 | **`_local/Launch ShotSmith.lnk`** | No | Windows shortcut with custom icon |
 | **`ShotSmith_original_art.png`** (example) | No | Large source art; keep here instead of the repo root |
+| **`LinkedIn Article/`** | No | Article draft + **source screenshots** for docs (`docs/images/` copies the UI PNGs) |
 | Other files you add | No | e.g. `notes.txt`, exports |
 
 The in-app/browser icon uses **`public/ShotSmith.ico`** (committed). That is separate from files you store only under `_local/`.
@@ -152,26 +153,39 @@ FAL_API_KEY=your_fal_key_here
 
 ## Using the app
 
+Screenshots: [`docs/images/`](docs/images/) (example “Construction” project; window title may show **ShotSmith** in current builds).
+
 ### Upload and vibe
 
-1. Open the **Upload** tab.
+1. Open **① Select Image**.
 2. Drop or pick a **PNG** or **JPEG** reference.
 3. The app calls Gemini to produce a read-only **style anchor** (you do not type prompts for this step).
 4. If parsing fails, read the message in the UI—common fixes are a missing key, wrong model id, or API not enabled.
 
+![Select Image: reference preview, output folder, filename prefix](docs/images/setup-select-image.png)
+
 ### Shots and batch
 
-1. Go to **Shots** and check the frames you want from the matrix tabs.
+1. Open **② Select Shots** and set takes (1–10) for the shots you want.
 2. Set a **filename prefix** if you don’t want the default `ShotSmith`.
-3. Adjust **creativity** (denoising) and **identity lock** if needed.
-4. Choose an **output folder** (Chromium directory picker).
-5. Click **Batch generate**. Files are written as `ProjectName_pack_shot_#.png` (or `.jpg` per API).
+3. Adjust **creativity** (denoising) as needed.
+4. Choose an **output folder** (Chrome/Edge directory picker).
+5. Click **Generate**. Files are written as `ProjectName_pack_shot_#.png` (or `.jpg` per API).
+
+![Select Shots: shot matrix, creativity slider, Generate](docs/images/setup-select-shots.png)
 
 ### Gallery, cleanup, upscale
 
-- **Gallery** — preview of the last batch run in the app.
-- **Cleanup** — optional Gemini image cleanup presets (same Gemini key and image model as batch).
-- **Solo Upscale** — requires **`FAL_API_KEY`**; upscales selected images via fal/Topaz.
+- **Gallery** — preview of the last batch; open a thumbnail to enlarge; check favorites and **Upscale to 4K** (requires `FAL_API_KEY`).
+
+![Gallery lightbox during a batch](docs/images/setup-gallery-lightbox.png)
+
+![Gallery grid with batch progress and Upscale to 4K](docs/images/setup-gallery-batch.png)
+
+- **Cleanup Only** — optional Gemini image cleanup presets (same Gemini key as batch).
+- **Upscale Only** — fal.ai / Topaz upscale for individually chosen files (`FAL_API_KEY` required).
+
+![Upscale Only tab: pick files, target width, Go](docs/images/setup-upscale-only.png)
 
 ---
 
@@ -216,7 +230,8 @@ More detail: [README.md — Troubleshooting](README.md#troubleshooting).
 
 | File | Purpose |
 |------|---------|
-| [SETUP_GUIDE.md](SETUP_GUIDE.md) | **Beginner setup** — Node.js, API keys, `_local/.env`, first run |
+| [SETUP_GUIDE.md](SETUP_GUIDE.md) | **Beginner setup** — Node.js, API keys, `_local/.env`, first run (with screenshots) |
+| [docs/images/](docs/images/) | Screenshot inventory and refresh notes |
 | [README.md](README.md) | Install, Windows launcher, scripts, env variable table, project layout |
 | [decisions.md](decisions.md) | Why the stack and APIs were chosen |
 | [roadmap.md](roadmap.md) | Shipped vs planned features |
