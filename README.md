@@ -1,20 +1,21 @@
 # ShotSmith
 
-**One reference image in → a set of matching cinematic stills out.**
+**One reference image → a matching set of cinematic stills.**
 
-ShotSmith is a **local app** for people who need **many frames that look like they belong together**—storyboards, animatics, pitch decks, or shot planning—**without writing a separate AI prompt for every angle**.
+ShotSmith is a **local app** for instructional designers, filmmakers, and anyone preparing **AI video or visual story workflows**. Upload a seed image, choose the shots you want, and generate a batch of previews that share the same look—then upscale the frames you need to 4K.
 
-Upload a reference image (style frame, key art, or mood board). ShotSmith picks up its visual feel, you choose from a curated list of cinematic shot types, and it generates a batch of stills that share that look. Pick an output folder on your computer; files save there. Optional cleanup and upscale steps are built in.
-
-**Why it exists:** Prompting shot-by-shot is slow, inconsistent, and easy to get wrong. ShotSmith keeps the look anchored to your reference and turns “I need twelve variations of this scene” into a checklist workflow.
+The workflow is a simple wizard: **Select Image** → **Select Shots** → **Gallery**. Two additional tabs offer photo cleanup and solo upscaling for individual files.
 
 | | |
 |--|--|
-| **No prompt crafting** | Select shots from a matrix; the app handles the wording. |
-| **Consistent look** | One reference drives the whole batch. |
-| **Runs on your machine** | Browser-based UI; API keys stay in a private `_local/` folder (not on GitHub). |
+| **Seed-driven** | One reference image anchors style across every shot. |
+| **Pick, don't prompt** | Choose shot types and counts from a curated matrix. |
+| **Review, then upscale** | Generate previews first; upscale favorites when you're ready. |
+| **Runs locally** | Browser UI on your machine; keys and files stay in `_local/` (not on GitHub). |
 
-**Stack (for developers):** Vite · React 19 · TypeScript · Google Gemini (style read + image generation) · optional fal.ai upscale.
+Also a fit for storyboards, animatics, pitch decks, and first/last frame planning for video clips.
+
+**Stack (for developers):** Vite · React 19 · TypeScript · Google Gemini · optional fal.ai (Topaz upscale).
 
 | Doc | Purpose |
 |-----|---------|
