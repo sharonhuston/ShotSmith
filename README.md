@@ -21,8 +21,9 @@ Also a fit for storyboards, animatics, pitch decks, and first/last frame plannin
 
 | Doc | Purpose |
 |-----|---------|
-| This **README** | Install, run, configure, troubleshoot |
-| [**USER_GUIDE.md**](USER_GUIDE.md) | First-time setup, **Windows launcher shortcut** (one-time), personalization checklist |
+| This **README** | Overview, install summary, troubleshoot |
+| [**SETUP_GUIDE.md**](SETUP_GUIDE.md) | **Step-by-step setup for beginners** (Node.js, API keys, first run) |
+| [**USER_GUIDE.md**](USER_GUIDE.md) | Daily workflow, Windows launcher, personalization checklist |
 | [**decisions.md**](decisions.md) | Architecture / product decisions (ADR-style) |
 | [**roadmap.md**](roadmap.md) | What’s shipped vs planned |
 | [**LICENSE**](LICENSE) | MIT — copyright **ShotSmith Contributors** (2026) |
@@ -31,6 +32,8 @@ Also a fit for storyboards, animatics, pitch decks, and first/last frame plannin
 ---
 
 ## First-time setup (after clone or download)
+
+**New to Node.js or the command line?** Follow [**SETUP_GUIDE.md**](SETUP_GUIDE.md) — full walkthrough with glossary and screenshots-level detail.
 
 | Step | Action |
 |------|--------|

@@ -4,11 +4,13 @@ ShotSmith is a **local app** you run on your own computer: add your API keys, op
 
 > **Transparency — vibe-coded app:** This app was built with **AI-assisted development** (primarily Cursor), under human direction and testing—not a black-box download. See [decisions.md](decisions.md) for how major choices were made, and [README.md](README.md) for the full picture.
 
-For install commands and troubleshooting, see [README.md](README.md). For product direction, see [roadmap.md](roadmap.md). **License:** MIT — copyright **ShotSmith Contributors** (see [LICENSE](LICENSE)). **Secrets and shortcuts:** [`_local/`](_local/README.md) — not uploaded to GitHub.
+For install commands and troubleshooting, see [README.md](README.md). **First-time setup (beginners):** [SETUP_GUIDE.md](SETUP_GUIDE.md). For product direction, see [roadmap.md](roadmap.md). **License:** MIT — copyright **ShotSmith Contributors** (see [LICENSE](LICENSE)). **Secrets and shortcuts:** [`_local/`](_local/README.md) — not uploaded to GitHub.
 
 ---
 
 ## Quick start
+
+**Never set up a Node app before?** Use the full [SETUP_GUIDE.md](SETUP_GUIDE.md) instead of this checklist.
 
 1. Install **Node.js** LTS and clone or download this repo.
 2. In the project root (folder with `package.json`), run `npm install`.
@@ -214,6 +216,7 @@ More detail: [README.md — Troubleshooting](README.md#troubleshooting).
 
 | File | Purpose |
 |------|---------|
+| [SETUP_GUIDE.md](SETUP_GUIDE.md) | **Beginner setup** — Node.js, API keys, `_local/.env`, first run |
 | [README.md](README.md) | Install, Windows launcher, scripts, env variable table, project layout |
 | [decisions.md](decisions.md) | Why the stack and APIs were chosen |
 | [roadmap.md](roadmap.md) | Shipped vs planned features |
