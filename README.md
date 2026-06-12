@@ -17,6 +17,24 @@ The workflow is a simple wizard: **Select Image** → **Select Shots** → **Gal
 
 Also a fit for storyboards, animatics, pitch decks, and first/last frame planning for video clips.
 
+## Example: one reference → many shots
+
+Real batch output from a **tea party** project. The **reference** is a vintage studio photograph; the stills below were generated from that single upload with the same style seed (filenames use prefix `teaParty`).
+
+**Reference (upload once):**
+
+![Reference image: vintage tea party photograph](docs/images/examples/tea_party.jpg)
+
+| Two-shot | Three-shot | Over-the-shoulder (OTS) |
+| :---: | :---: | :---: |
+| ![Two-shot](docs/images/examples/tea_party-two-shot.jpg) | ![Three-shot](docs/images/examples/tea_party-three-shot.jpg) | ![Over-the-shoulder](docs/images/examples/tea_party-ots.jpg) |
+
+| Reaction | Rear | Cleanup *(Cleanup Only tab)* |
+| :---: | :---: | :---: |
+| ![Reaction shot](docs/images/examples/tea_party-reaction.jpg) | ![Rear shot](docs/images/examples/tea_party-rear.jpg) | ![After cleanup](docs/images/examples/tea_party-cleanup.jpg) |
+
+Same scene, different shot types—no separate prompt per frame. [SETUP_GUIDE](SETUP_GUIDE.md) and [USER_GUIDE](USER_GUIDE.md) walk through the workflow; [docs/images/examples/](docs/images/examples/) holds these files.
+
 **Stack (for developers):** Vite · React 19 · TypeScript · Google Gemini · optional fal.ai (Topaz upscale).
 
 | Doc | Purpose |

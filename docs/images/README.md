@@ -1,8 +1,22 @@
 # Documentation images
 
-Screenshots used in [SETUP_GUIDE.md](../SETUP_GUIDE.md) and [USER_GUIDE.md](../USER_GUIDE.md).
+Screenshots used in [SETUP_GUIDE.md](../SETUP_GUIDE.md) and [USER_GUIDE.md](../USER_GUIDE.md). Sample **output stills** for the README live in [`examples/`](examples/).
 
-## Current images (in repo)
+## Example output stills (`examples/`)
+
+| File | Shot type |
+|------|-----------|
+| `tea_party.jpg` | **Reference** (original upload) |
+| `tea_party-two-shot.jpg` | Two-shot |
+| `tea_party-three-shot.jpg` | Three-shot |
+| `tea_party-ots.jpg` | Over-the-shoulder (OTS) |
+| `tea_party-reaction.jpg` | Reaction |
+| `tea_party-rear.jpg` | Rear |
+| `tea_party-cleanup.jpg` | After **Cleanup Only** |
+
+**Source (local):** `_local/Examples/` — copy updates here when you refresh the README gallery.
+
+## UI screenshots (repo root)
 
 | File | Shows | Used in |
 |------|--------|---------|

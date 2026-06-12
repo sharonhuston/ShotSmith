@@ -9,6 +9,7 @@ Put **machine-specific** files here. The whole folder is gitignored except this 
 | **`notes.txt`** | Optional personal scratch notes. |
 | **`ShotSmith_original_art.png`** | Optional source art / exports you do not want in the repo. |
 | **`LinkedIn Article/`** | Article draft and **source UI screenshots** for docs (PNG copies live in `docs/images/` in the repo). |
+| **`Examples/`** | Sample **output stills** for the README (`tea_party.jpg` reference + batch results; copies in `docs/images/examples/`). |
 
 **Setup (every new clone):**
 
