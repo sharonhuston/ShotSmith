@@ -1,0 +1,106 @@
+:root {
+  --text: #5c6470;
+  --text-h: #0b0d12;
+  --bg: #e2e0dc;
+  --border: #d9d4cf;
+  --border-strong: #c1bbb4;
+  --code-bg: #ebe6df;
+  --accent: #2d6a4f;
+  --accent-bg: rgba(45, 106, 79, 0.1);
+  --accent-border: rgba(45, 106, 79, 0.4);
+  --panel-bg: #faf8f5;
+  --dropzone-bg: #f0ece6;
+  --danger: #b91c1c;
+  --panel-shadow: 0 1px 2px rgba(15, 15, 20, 0.06);
+  --shadow: rgba(0, 0, 0, 0.08) 0 8px 20px -6px;
+  /* ShotSmith UI (mockup-aligned) */
+  --window-bg: #f6f4f0;
+  --window-border: #c9c3bc;
+  --window-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --card-inner: #faf8f5;
+  --btn-upload: #3d8c5a;
+  --action-blue: #2563eb;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Segoe UI', system-ui, Roboto, sans-serif;
+  --mono: ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  font: 16px/145% var(--sans);
+  letter-spacing: 0.01em;
+  color-scheme: light dark;
+  color: var(--text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  max-width: 100%;
+  min-height: 100svh;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background-color: #ddd9d2;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
+  background-attachment: fixed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #111216;
+    --border: #2a2d35;
+    --border-strong: #3d424d;
+    --code-bg: #1a1c22;
+    --accent: #6ee7a8;
+    --accent-bg: rgba(110, 231, 168, 0.12);
+    --accent-border: rgba(110, 231, 168, 0.4);
+    --panel-bg: #16181e;
+    --dropzone-bg: #1a1d25;
+    --danger: #f87171;
+    --panel-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    --shadow: rgba(0, 0, 0, 0.4) 0 10px 24px -8px;
+    --window-bg: #111216;
+    --window-border: #2a2d35;
+    --window-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+    --card-inner: #16181e;
+    --btn-upload: #3d8c5a;
+    --action-blue: #3b82f6;
+  }
+
+  body {
+    background-color: #0c0d10;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--code-bg);
+  color: var(--text-h);
+}
