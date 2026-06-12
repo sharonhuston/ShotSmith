@@ -1,8 +1,20 @@
-# ShotSmith (Promptless)
+# ShotSmith
 
-Local web app for a **promptless** pipeline: upload a **reference image** → derive an internal **style anchor** with **Gemini Pro (latest)** → choose **cinematic shots** from a fixed matrix → **batch-generate** stills with a shared **identity seed** and save to disk ( **Gemini 3 Pro Image** by default).
+**One reference image in → a set of matching cinematic stills out.**
 
-**Stack:** Vite · React 19 · TypeScript · `@google/generative-ai` (vibe) + **REST** to `generativelanguage.googleapis.com` (Pro image batch).
+ShotSmith is a **local app** for people who need **many frames that look like they belong together**—storyboards, animatics, pitch decks, or shot planning—**without writing a separate AI prompt for every angle**.
+
+Upload a reference image (style frame, key art, or mood board). ShotSmith picks up its visual feel, you choose from a curated list of cinematic shot types, and it generates a batch of stills that share that look. Pick an output folder on your computer; files save there. Optional cleanup and upscale steps are built in.
+
+**Why it exists:** Prompting shot-by-shot is slow, inconsistent, and easy to get wrong. ShotSmith keeps the look anchored to your reference and turns “I need twelve variations of this scene” into a checklist workflow.
+
+| | |
+|--|--|
+| **No prompt crafting** | Select shots from a matrix; the app handles the wording. |
+| **Consistent look** | One reference drives the whole batch. |
+| **Runs on your machine** | Browser-based UI; API keys stay in a private `_local/` folder (not on GitHub). |
+
+**Stack (for developers):** Vite · React 19 · TypeScript · Google Gemini (style read + image generation) · optional fal.ai upscale.
 
 | Doc | Purpose |
 |-----|---------|
