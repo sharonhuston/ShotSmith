@@ -10,7 +10,8 @@ Screenshots used in [SETUP_GUIDE.md](../SETUP_GUIDE.md) and [USER_GUIDE.md](../U
 | `tea_party-two-shot.jpg` | Two-shot |
 | `tea_party-three-shot.jpg` | Three-shot |
 | `tea_party-ots.jpg` | Over-the-shoulder (OTS) |
-| `tea_party-reaction.jpg` | Reaction |
+| `tea_party-reaction.jpg` | Reaction (take 1) — `teaParty_cinematic_reaction_9.jpg` |
+| `tea_party-reaction-2.jpg` | Reaction (take 2) — `teaParty_cinematic_reaction_10.jpg` |
 | `tea_party-rear.jpg` | Rear |
 | `tea_party-cleanup.jpg` | After **Cleanup Only** |
 

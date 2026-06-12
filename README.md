@@ -29,11 +29,15 @@ Real batch output from a **tea party** project. The **reference** is a vintage s
 | :---: | :---: | :---: |
 | ![Two-shot](docs/images/examples/tea_party-two-shot.jpg) | ![Three-shot](docs/images/examples/tea_party-three-shot.jpg) | ![Over-the-shoulder](docs/images/examples/tea_party-ots.jpg) |
 
-| Reaction | Rear | Cleanup *(Cleanup Only tab)* |
-| :---: | :---: | :---: |
-| ![Reaction shot](docs/images/examples/tea_party-reaction.jpg) | ![Rear shot](docs/images/examples/tea_party-rear.jpg) | ![After cleanup](docs/images/examples/tea_party-cleanup.jpg) |
+| Reaction (take 1) | Reaction (take 2) |
+| :---: | :---: |
+| ![Reaction take 1](docs/images/examples/tea_party-reaction.jpg) | ![Reaction take 2](docs/images/examples/tea_party-reaction-2.jpg) |
 
-Same scene, different shot types—no separate prompt per frame. [SETUP_GUIDE](SETUP_GUIDE.md) and [USER_GUIDE](USER_GUIDE.md) walk through the workflow; [docs/images/examples/](docs/images/examples/) holds these files.
+| Rear | Cleanup *(Cleanup Only tab)* |
+| :---: | :---: |
+| ![Rear shot](docs/images/examples/tea_party-rear.jpg) | ![After cleanup](docs/images/examples/tea_party-cleanup.jpg) |
+
+Same scene, different shot types—no separate prompt per frame. Request **multiple takes** of one shot type (e.g. two Reactions) and each frame can vary while staying on the same style seed. [SETUP_GUIDE](SETUP_GUIDE.md) and [USER_GUIDE](USER_GUIDE.md) walk through the workflow; [docs/images/examples/](docs/images/examples/) holds these files.
 
 **Stack (for developers):** Vite · React 19 · TypeScript · Google Gemini · optional fal.ai (Topaz upscale).
 
