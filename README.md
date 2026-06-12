@@ -2,6 +2,8 @@
 
 **One reference image → a matching set of cinematic stills.**
 
+> **Transparency — vibe-coded app:** ShotSmith was built with **AI-assisted development** (primarily [Cursor](https://cursor.com)), under human direction, testing, and product decisions. The source is open; you can read, run, fork, and judge it for yourself. Design rationale is in [decisions.md](decisions.md). If you want a hand-written-only codebase, this project is not that—and we are not pretending otherwise.
+
 ShotSmith is a **local app** for instructional designers, filmmakers, and anyone preparing **AI video or visual story workflows**. Upload a seed image, choose the shots you want, and generate a batch of previews that share the same look—then upscale the frames you need to 4K.
 
 The workflow is a simple wizard: **Select Image** → **Select Shots** → **Gallery**. Two additional tabs offer photo cleanup and solo upscaling for individual files.

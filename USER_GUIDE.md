@@ -2,6 +2,8 @@
 
 ShotSmith is a **local app** you run on your own computer: add your API keys, open it in a browser, and build a **matching set of cinematic stills from one reference image**—for storyboards, AI video frame prep, and shot planning. Pick your shots, review previews in the gallery, and upscale the frames you want to keep.
 
+> **Transparency — vibe-coded app:** This app was built with **AI-assisted development** (primarily Cursor), under human direction and testing—not a black-box download. See [decisions.md](decisions.md) for how major choices were made, and [README.md](README.md) for the full picture.
+
 For install commands and troubleshooting, see [README.md](README.md). For product direction, see [roadmap.md](roadmap.md). **License:** MIT — copyright **ShotSmith Contributors** (see [LICENSE](LICENSE)). **Secrets and shortcuts:** [`_local/`](_local/README.md) — not uploaded to GitHub.
 
 ---
