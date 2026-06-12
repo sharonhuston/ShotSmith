@@ -37,21 +37,23 @@ Also a fit for storyboards, animatics, pitch decks, and first/last frame plannin
 | 3 | `npm run dev` — or on Windows, **`Launch ShotSmith.bat`** (creates **`_local/Launch ShotSmith.lnk`** on first run) |
 | 4 | Open the URL Vite prints (usually http://localhost:5173/) |
 
-**Do not commit** `_local/.env`, shortcuts, or other private files—see [**What goes on GitHub**](#what-goes-on-github).
+**API keys** go in **`_local/.env`** on your machine only—that file is never uploaded to GitHub. See [**Your private files**](#your-private-files) below.
 
 ---
 
-## What goes on GitHub
+## Your private files
 
-| In the repo | Not in the repo (use `_local/` or build output) |
-|-------------|--------------------------------------------------|
-| Source (`src/`), docs, `ShotSmith.ico`, `public/ShotSmith.ico`, launchers | **`_local/.env`** (API keys) |
-| `_local/README.md`, `_local/.env.example` (templates only) | **`_local/Launch ShotSmith.lnk`** (Windows shortcut) |
-| Root [`.env.example`](.env.example) (pointer to `_local/`) | **`node_modules/`**, **`dist/`**, personal art/notes in `_local/` |
+When you download or clone ShotSmith from GitHub, you get the app, docs, and launcher scripts. A few things stay **on your PC only**:
 
-Full list: [**`_local/README.md`**](_local/README.md).
+| File | What it is |
+|------|------------|
+| **`_local/.env`** | Your API keys (copy from [`_local/.env.example`](_local/.env.example)) |
+| **`_local/Launch ShotSmith.lnk`** | Optional Windows shortcut with the custom icon (created on first run) |
+| Anything else you add under **`_local/`** | Notes, source art, scratch files |
 
----
+That keeps secrets and machine-specific paths off GitHub. Full details: [**`_local/README.md`**](_local/README.md).
+
+**Contributors:** before `git push`, run `git status` and confirm `_local/.env` and other private `_local/*` files (except `README.md` and `.env.example`) are not staged.
 
 ## Prerequisites
 
@@ -197,7 +199,7 @@ scripts/Create-LauncherShortcut.ps1
 
 ## Security and production
 
-- **Secrets live in `_local/.env` only** — never commit that file. Before `git push`, run `git status` and confirm `_local/.env` and other `_local/*` (except `README.md` and `.env.example`) are not staged.
+- **Secrets live in `_local/.env` only** — see [Your private files](#your-private-files).
 - **API keys in the client:** Anything in `VITE_*` is bundled for the browser. Fine for **local** use. For anything public or multi-user, use a small **backend** or **Electron** so keys are not in the client.
 - **Production build:** `npm run build` outputs to `dist/`. Vite reads **`_local/.env`** (and legacy root `.env` if present) at build time. Hosting `dist/` still exposes inlined keys—local use only unless you add a backend.
 
